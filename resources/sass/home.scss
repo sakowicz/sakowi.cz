@@ -1,0 +1,28 @@
+.port-subtitle span a {
+    padding: 0 0;
+}
+
+.content-holder {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+}
+
+#portfolio_horizontal_container {
+    padding-left: 15px;
+}
+
+@media only screen and (max-width: 756px) {
+    #portfolio_horizontal_container {
+        padding-left: 0;
+    }
+
+    .portfolio_item {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    .port-subtitle {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
