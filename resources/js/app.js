@@ -1,15 +1,13 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
-import Home from './components/Home';
-import Contact from './components/Contact';
-import Photography from './components/Photography';
-import PageNotFound from './components/PageNotFound';
-
-require('./bootstrap');
+import Home from './app/components/home/Home';
+import Contact from './app/components/contact/Contact';
+import Photography from './app/components/photography/Photography';
+import PageNotFound from './app/components/PageNotFound';
 
 Vue.use(VueRouter);
 
-const files = require.context('./', true, /\.vue$/i);
+const files = require.context('./app', true, /\.vue$/i);
 files.keys()
     .map(key => Vue.component(key.split('/')
         .pop()

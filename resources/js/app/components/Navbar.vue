@@ -1,15 +1,11 @@
 <template>
     <header>
-        <!-- Header inner  -->
         <div class="header-inner">
-            <!-- Logo  -->
             <div class="logo-holder">
-                <a href="/">
+                <router-link :to="{ name: 'home' }">
                     <img src="images/logo.png" alt="sakowi.cz logo">
-                </a>
+                </router-link>
             </div>
-            <!--Logo end  -->
-            <!--Navigation  -->
             <div class="nav-button-holder">
                 <div class="nav-button vis-m"><span></span><span></span><span></span>
                 </div>

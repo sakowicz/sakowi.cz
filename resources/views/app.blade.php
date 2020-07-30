@@ -37,8 +37,6 @@
     <!-- Color the status bar on mobile devices -->
     <meta name="theme-color" content="#2F3BA2">
     <link href="{{ mix('css/app.css') }}" rel="stylesheet">
-<?php if (!isset($_SERVER['HTTP_USER_AGENT']) || stripos($_SERVER['HTTP_USER_AGENT'], 'Speed Insights') === false): ?>
-<!-- Google Analytics -->
     <script>
         (function (i, s, o, g, r, a, m) {
             i['GoogleAnalyticsObject'] = r;
@@ -55,7 +53,6 @@
         ga('create', 'UA-64562738-5', 'auto');
         ga('send', 'pageview');
     </script>
-    <?php endif; ?>
     <script type="application/ld+json">
         {
             "@context": "http://schema.org",
@@ -88,16 +85,6 @@
                 }
             ]
         }
-
-
-
-
-
-
-
-
-
-
 
     </script>
     <meta name="B-verify" content="272bc274c68d50b76268e9cf47a588e6c2676f94"/>
