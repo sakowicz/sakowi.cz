@@ -1310,12 +1310,12 @@ nav li ul a.act-link {
     margin-top: -50px
 }
 
-.servicses-holder {
+.services-holder {
     float: left;
     width: 100%
 }
 
-.servicses-holder li {
+.services-holder li {
     width: 50%;
     float: left;
     padding: 20px 20px 20px 60px;
@@ -1323,7 +1323,7 @@ nav li ul a.act-link {
     cursor: default
 }
 
-.servicses-holder li i {
+.services-holder li i {
     position: absolute;
     top: 22px;
     left: 0;
@@ -1331,7 +1331,7 @@ nav li ul a.act-link {
     font-size: 22px
 }
 
-.servicses-holder li h4 {
+.services-holder li h4 {
     text-align: left;
     font-size: 16px;
     text-transform: uppercase;
@@ -1340,7 +1340,7 @@ nav li ul a.act-link {
     padding-bottom: 10px
 }
 
-.servicses-holder li span {
+.services-holder li span {
     float: left;
     color: #fff;
     width: 100%;
@@ -3639,7 +3639,7 @@ article {
         position: relative
     }
 
-    .gallery-item, .inline-facts, .servicses-holder li {
+    .gallery-item, .inline-facts, .services-holder li {
         width: 100%
     }
 }

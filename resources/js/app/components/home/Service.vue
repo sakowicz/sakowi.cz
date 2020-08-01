@@ -1,12 +1,12 @@
 <template>
-    <li :data-bgscr="url">
+    <li :data-bg-src="img">
         <i :class="icon"></i>
         <h4>{{ title }}</h4>
         <p>{{ subtitle }}</p>
     </li>
 </template>
 <script>
-    export default {
-        props: ['url', 'icon', 'title', 'subtitle']
-    }
+export default {
+    props: ['img', 'icon', 'title', 'subtitle']
+}
 </script>

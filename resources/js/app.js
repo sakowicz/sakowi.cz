@@ -1,3 +1,5 @@
+require('./_bootstrap');
+
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 import Home from './app/components/home/Home';
@@ -22,6 +24,17 @@ const router = new VueRouter({
         {path: '*', name: 'page-not-found', component: PageNotFound}
     ]
 });
+
+
+Vue.mixin({
+    methods: {
+        initEvent(name) {
+            const event = document.createEvent('Event');
+            event.initEvent(name);
+            window.dispatchEvent(event);
+        },
+    }
+})
 
 const app = new Vue({
     el: '#main',

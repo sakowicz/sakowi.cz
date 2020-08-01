@@ -29,7 +29,7 @@
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
-    <link rel="manifest" href="/manifest.json">
+    {{--    <link rel="manifest" href="/manifest.json">--}}
     <meta name="theme-color" content="#ffffff">
     <!-- Tile icon for Win8 (144x144 + tile color) -->
     <meta name="msapplication-TileImage" content="ms-touch-icon-144x144-precomposed.png">
@@ -86,26 +86,27 @@
             ]
         }
 
+
+
+
+
+
+
+
+
+
+
+
     </script>
     <meta name="B-verify" content="272bc274c68d50b76268e9cf47a588e6c2676f94"/>
 </head>
 <body>
-<script type="text/javascript">
-    var timePeriodInMs = 3500;
-    setTimeout(
-        function () {
-            document.getElementById('loaderExit').style.display = 'none';
-            document.getElementById('main').style.opacity = '1';
-        },
-        timePeriodInMs
-    );
-</script>
 <div class="loader" id="loaderExit"><i class="fa fa-refresh fa-spin"></i>
 </div>
 <div id="main">
     <app></app>
 </div>
-<script src="{{ mix('js/app.js') }}"></script>
 <script type="text/javascript" src="js/compressed.js"></script>
+<script src="{{ mix('js/app.js') }}"></script>
 </body>
 </html>
