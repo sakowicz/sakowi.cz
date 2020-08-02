@@ -8,7 +8,7 @@
                             <div id="portfolio_horizontal_container">
                                 <photo-single v-for="photo in photos"
                                               v-bind:key="photo.url"
-                                              :url="photo.url"
+                                              :url="photo.image"
                                               :title="photo.title"
                                               :subtitle="photo.subtitle">
                                 </photo-single>
