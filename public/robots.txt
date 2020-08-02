@@ -1,2 +1,5 @@
-User-agent: *
-Disallow:
+User-Agent: *
+Disallow: 
+Disallow: /.git
+
+Sitemap: https://sakowi.cz/sitemap.xml
