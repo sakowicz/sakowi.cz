@@ -9,18 +9,12 @@
                     <h2>O mnie</h2>
                     <div class="separator"></div>
                     <div class="clearfix"></div>
-                    <p>Nazywam się Szymon Sakowicz. Jestem programistą. Specjalizuję się w technologiach
-                        webowych (głównie w PHP oraz Node.JS) i bezpieczeństwie internetowym. Dodatkowo,
-                        z
-                        pasji
-                        zajmuję się
-                        <a href="/photography">fotografią</a>
-                        oraz
-                        <a
-                            href="https://republicofsimracers.com/"
-                        >simracingiem
-                        </a>
-                        .
+                    <p>
+                        Nazywam się Szymon Sakowicz. Jestem programistą. Specjalizuję się w technologiachwebowych
+                        (głównie w PHP oraz Node.JS) i bezpieczeństwie internetowym. Dodatkowo, z pasji zajmuję
+                        się
+                        <router-link :to="{ name: 'photography' }">fotografią</router-link>
+                        oraz <a href="https://republicofsimracers.com/">simracingiem</a>.
                     </p>
                     <div class="clearfix"></div>
                 </div>

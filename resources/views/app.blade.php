@@ -85,18 +85,6 @@
                 }
             ]
         }
-
-
-
-
-
-
-
-
-
-
-
-
     </script>
     <meta name="B-verify" content="272bc274c68d50b76268e9cf47a588e6c2676f94"/>
 </head>

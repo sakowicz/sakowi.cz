@@ -11,6 +11,10 @@
     padding-left: 15px;
 }
 
+.router-link-exact-active {
+    font-weight: 900;
+}
+
 @media only screen and (min-width: $desktopMinWidth) {
     #sec1 {
         padding: 300px 0 0;

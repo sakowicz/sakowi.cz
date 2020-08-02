@@ -22,7 +22,7 @@ const router = new VueRouter({
         {path: '/contact', name: 'contact', component: Contact},
         {path: '/photography', name: 'photography', component: Photography},
         {path: '*', name: 'page-not-found', component: PageNotFound}
-    ]
+    ],
 });
 
 
