@@ -11,6 +11,12 @@
     padding-left: 15px;
 }
 
+@media only screen and (min-width: $desktopMinWidth) {
+    #sec1 {
+        padding: 300px 0 0;
+    }
+}
+
 @media only screen and (max-width: 756px) {
     #portfolio_horizontal_container {
         padding-left: 0;
