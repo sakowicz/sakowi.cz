@@ -1,7 +1,10 @@
 <?php
 
+use App\Http\Controllers\App\PhotoListController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/photos', 'App\PhotoController@index');
+Route::namespace('\\')->group(function () {
+    Route::get('/photos', PhotoListController::class);
+});
 
-Route::get('/{any}', fn() => view('app'))->where('any', '.*');
+Route::get(' /{any}', fn() => view('app'))->where('any', '.*');

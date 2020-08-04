@@ -5,9 +5,9 @@ use App\Http\Controllers\AppController;
 use App\Model\Photo;
 use Illuminate\Http\JsonResponse;
 
-class PhotoController extends AppController
+class PhotoListController extends AppController
 {
-    public function index(): JsonResponse
+    public function __invoke(): JsonResponse
     {
         $photos = Photo::onHomepage()->get()->shuffle();
 
