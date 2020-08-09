@@ -9,7 +9,7 @@ class PhotoListController extends AppController
 {
     public function __invoke(): JsonResponse
     {
-        $photos = Photo::onHomepage()->get()->shuffle();
+        $photos = Photo::onHomepage()->get();
 
         return response()->json($photos);
     }

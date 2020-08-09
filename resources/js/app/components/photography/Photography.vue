@@ -10,7 +10,8 @@
                                               v-bind:key="photo.url"
                                               :url="photo.image"
                                               :title="photo.title"
-                                              :subtitle="photo.subtitle">
+                                              :subtitle="photo.subtitle"
+                                >
                                 </photo-single>
                             </div>
                         </div>
@@ -20,24 +21,24 @@
         </div>
         <div class="left-decor"></div>
     </div>
-
 </template>
 <script>
-export default {
-    mounted() {
-        axios.get('/photos').then(res => {
-            res.data.forEach(data => {
-                this.photos.push(data);
-            })
+    export default {
+        mounted() {
+            axios.get('/photos').then(res => {
+                res.data.forEach(data => {
+                    this.photos.push(data);
+                    this.shuffleArray(this.photos);
+                });
 
-        }).finally(() => {
-            this.initEvent('initOutdoorSlider');
-        })
-    },
-    data() {
-        return {
-            photos: []
+            }).finally(() => {
+                this.initEvent('initOutdoorSlider');
+            });
+        },
+        data() {
+            return {
+                photos: []
+            };
         }
-    }
-};
+    };
 </script>
