@@ -1,10 +1,15 @@
 <?php
 
-use App\Http\Controllers\App\PhotoListController;
 use Illuminate\Support\Facades\Route;
 
-Route::namespace('\\')->group(function () {
-    Route::get('/photos', PhotoListController::class);
-});
+Route::group(
+    ['namespace' => '\\'],
+    function () {
+        Route::group(
+            ['prefix' => 'admin', 'as' => 'admin.', 'middleware' => ['permission']],
+            base_path('/routes/admin/admin.php')
+        );
 
-Route::get(' /{any}', fn() => view('app'))->where('any', '.*');
+        Route::group([], base_path('/routes/app/app.php'));
+    }
+);
