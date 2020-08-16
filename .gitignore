@@ -11,4 +11,11 @@ Homestead.yaml
 npm-debug.log
 yarn-error.log
 /public/js/app.js
+/public/js/admin.js
 /public/css/app.css
+/public/css/admin.css
+.phpstorm.meta.php
+_ide_helper*
+/public/mix-manifest.json
+/public/fonts/vendor
+/public/js/app.js.map

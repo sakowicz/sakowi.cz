@@ -63,15 +63,10 @@ class PhotoSeeder extends Seeder
         ]
     ];
 
-    /**
-     * Run the database seeds.
-     *
-     * @return void
-     */
     public function run()
     {
         foreach (static::DEFAULT_PHOTOS as $defaultPhoto) {
-            $photo = new Photo;
+            $photo = new Photo();
             $photo->title = $defaultPhoto['title'];
             $photo->image = $defaultPhoto['url'];
             $photo->subtitle = $defaultPhoto['subtitle'];
