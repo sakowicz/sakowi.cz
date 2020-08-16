@@ -1,3 +1,5 @@
 @import "~datatables.net-bs4/css/dataTables.bootstrap4.css";
-@import './admin/template/sb-admin-2';
 @import '~@fortawesome/fontawesome-free/css/all.css';
+@import '~startbootstrap-sb-admin-2/scss/sb-admin-2';
+
+@import "./admin/**/*.scss";

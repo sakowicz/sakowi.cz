@@ -11,6 +11,7 @@ class RouteHelper
         if (strpos(Route::currentRouteName(), $route) !== false) {
             return $output;
         }
+        
         return '';
     }
 

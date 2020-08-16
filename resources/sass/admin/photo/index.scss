@@ -1,0 +1,20 @@
+#photosDataTable {
+    td {
+        vertical-align: middle;
+    }
+
+    .photo {
+        text-align: center;
+        width: 1%;
+
+        img {
+            height: 100px;
+        }
+    }
+
+    .action {
+        text-align: right;
+        white-space: nowrap;
+        width: 1%;
+    }
+}

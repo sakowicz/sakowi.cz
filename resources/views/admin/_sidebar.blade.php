@@ -1,8 +1,8 @@
 <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
     <a class="sidebar-brand d-flex align-items-center justify-content-center" href="{{ route('admin.home.index') }}">
-        <div class="sidebar-brand-icon rotate-n-15">
-            <i class="fas fa-laugh-wink"></i>
+        <div class="sidebar-brand-icon">
+            <i class="fas fa-camera"></i>
         </div>
         <div class="sidebar-brand-text mx-3">sakowi.cz</div>
     </a>
@@ -19,7 +19,7 @@
 
     <li class="nav-item {{ RouteHelper::isActiveRoute('admin.photo') }}">
         <a class="nav-link" href="{{ route('admin.photo.index') }}">
-            <i class="fas fa-fw fa-table"></i>
+            <i class="fas fa-fw fa-camera-retro"></i>
             <span>{{ __('Zdjęcia') }}</span></a>
     </li>
 
