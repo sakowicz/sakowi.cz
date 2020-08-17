@@ -23,22 +23,22 @@
     </div>
 </template>
 <script>
-    export default {
-        mounted() {
-            axios.get('/photos').then(res => {
-                res.data.forEach(data => {
-                    this.photos.push(data);
-                    this.shuffleArray(this.photos);
-                });
-
-            }).finally(() => {
-                this.initEvent('initOutdoorSlider');
+export default {
+    created() {
+        axios.get('/photos').then(res => {
+            res.data.forEach(data => {
+                this.photos.push(data);
+                this.shuffleArray(this.photos);
             });
-        },
-        data() {
-            return {
-                photos: []
-            };
-        }
-    };
+
+        }).finally(() => {
+            this.initEvent('initOutdoorSlider');
+        });
+    },
+    data() {
+        return {
+            photos: []
+        };
+    }
+};
 </script>

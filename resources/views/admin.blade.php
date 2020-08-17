@@ -18,30 +18,8 @@
 </head>
 
 <body id="page-top">
-
-<div id="wrapper">
-
-    @include('admin._sidebar')
-    <div id="content-wrapper" class="d-flex flex-column">
-
-        <div id="content">
-
-            @include('admin._navbar')
-
-            @yield('content')
-
-        </div>
-
-        <footer class="sticky-footer bg-white">
-            <div class="container my-auto">
-                <div class="copyright text-center my-auto">
-                    <span>Copyright &copy; Szymon Sakowicz</span>
-                </div>
-            </div>
-        </footer>
-
-    </div>
-
+<div id="app">
+    <Admin username="{{ Auth::user()->name }}"></Admin>
 </div>
 
 <a class="scroll-to-top rounded" href="#page-top">
@@ -53,17 +31,17 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                <h5 class="modal-title" id="exampleModalLabel">{{ __('Czy napewno?') }}</h5>
                 <button class="close" type="button" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">×</span>
                 </button>
             </div>
-            <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+            <div class="modal-body">{{ __('Jeśli chcesz zakończyć swoją sesję naciśnij "Wyloguj"') }}</div>
             <div class="modal-footer">
-                <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                <button class="btn btn-secondary" type="button" data-dismiss="modal">{{ __('Anuluj') }}</button>
                 <a class="btn btn-primary" href="{{ route('logout') }}"
                    onclick="event.preventDefault();document.getElementById('logout-form').submit();">
-                    {{ __('Logout') }}
+                    {{ __('Wyloguj') }}
                 </a>
                 <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                     @csrf
