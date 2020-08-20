@@ -1,11 +1,11 @@
 <template>
     <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
-        <a class="sidebar-brand d-flex align-items-center justify-content-center" href="">
+        <router-link class="sidebar-brand d-flex align-items-center justify-content-center" :to="{ name: 'dashboard' }">
             <div class="sidebar-brand-icon">
                 <i class="fas fa-camera"></i>
             </div>
             <div class="sidebar-brand-text mx-3">sakowi.cz</div>
-        </a>
+        </router-link>
 
         <hr class="sidebar-divider my-0">
 
@@ -61,7 +61,7 @@ export default {
 </script>
 
 <style scoped>
-.router-link-exact-active {
+.nav-item .router-link-exact-active {
     font-weight: bold;
 }
 </style>

@@ -6,7 +6,6 @@
         </div>
 
         <div class="row">
-
             <SingleStats
                 :title="'Zdjęć w ogóle'"
                 :value="stats.photosAll"
@@ -20,6 +19,7 @@
                 :cardClass="'border-left-success'">
             </SingleStats>
         </div>
+
     </div>
 </template>
 
