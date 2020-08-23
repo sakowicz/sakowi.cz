@@ -1,6 +1,7 @@
 require('./admin/_bootstrap');
 require('datatables.net');
 require('datatables.net-bs4');
+window.toastr = require('toastr');
 
 import Vue from 'vue';
 import router from './admin/router';

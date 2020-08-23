@@ -4,10 +4,10 @@
             <img :alt="title" :src="`/${image}`"></td>
         <td>{{ title }}</td>
         <td class="action">
-            <a class="btn btn-info" href="">
+            <router-link class="btn btn-info" :to="{ name: 'photo-edit',  params: {id}}">
                 <i class="fas fa-edit"></i>
-            </a>
-            <button v-on:click="toggleIsOnHomepage" class="btn" :class=switchColorClass>
+            </router-link>
+            <button v-on:click="toggleIsOnHomepage" class="btn" :class=switchColorClass title="Pokaż na głównej">
                 <i class="fas" :class=switchIconClass></i>
             </button>
             <a class="btn btn-light" :href="`/${image}`" target="_blank">
