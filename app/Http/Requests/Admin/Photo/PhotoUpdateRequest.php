@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Http\Requests\Admin;
+namespace App\Http\Requests\Admin\Photo;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class PhotoRequest extends FormRequest
+class PhotoUpdateRequest extends FormRequest
 {
     public function authorize()
     {
@@ -16,7 +16,6 @@ class PhotoRequest extends FormRequest
         return [
             'title' => 'required_with:is_on_homepage',
             'subtitle' => 'required_with:is_on_homepage',
-            'image' => 'required|string',
             'is_on_homepage' => 'boolean',
         ];
     }

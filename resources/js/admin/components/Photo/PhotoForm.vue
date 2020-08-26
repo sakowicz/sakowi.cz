@@ -10,10 +10,19 @@
             <input class="form-control" id="subtitle" name="subtitle" v-model="form.subtitle">
             <span class="text-danger" v-if="form.errors.has('subtitle')" v-text="form.errors.get('subtitle')"></span>
         </div>
-        <div class="form-group">
-            <label for="image">URL:</label>
-            <input class="form-control" id="image" name="image" v-model="form.image">
-            <span class="text-danger" v-if="form.errors.has('image')" v-text="form.errors.get('image')"></span>
+        <div v-if="!this.photo">
+            <div class="form-group">
+                <label for="image">Zdjęcie</label>
+                <input type="file" class="form-control-file" id="image" name="image" @change="onFileChange"
+                       accept="image/*">
+                <span class="text-danger" v-if="form.errors.has('image')" v-text="form.errors.get('image')"></span>
+            </div>
+            <div class="form-group">
+                <label for="image">Nazwa pliku</label>
+                <input class="form-control" id="image_name" name="image_name" v-model="form.image_name">
+                <span class="text-danger" v-if="form.errors.has('image_name')"
+                      v-text="form.errors.get('image_name')"></span>
+            </div>
         </div>
         <div class="form-check">
             <input type="checkbox" class="form-check-input" id="is_on_homepage" name="is_on_homepage"
@@ -37,6 +46,7 @@ export default {
                 title: '',
                 subtitle: '',
                 image: '',
+                image_name: '',
                 is_on_homepage: false,
             }),
         }
@@ -58,7 +68,14 @@ export default {
         handleResponse(response) {
             toastr.success(response.message);
             this.$router.push('/photo');
-        }
+        },
+        onFileChange(e) {
+            if (e.target.files.length) {
+                this.form.image = e.target.files[0];
+            } else {
+                this.form.image = '';
+            }
+        },
     },
     watch: {
         photo() {

@@ -5,6 +5,7 @@ window.toastr = require('toastr');
 
 import Vue from 'vue';
 import router from './admin/router';
+import methods from "./global_helpers";
 
 const files = require.context('./admin', true, /\.vue$/i);
 files.keys()
@@ -12,6 +13,7 @@ files.keys()
         .pop()
         .split('.')[0], files(key).default));
 
+Vue.mixin({methods});
 const app = new Vue({
     el: '#app',
     router

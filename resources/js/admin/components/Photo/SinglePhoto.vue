@@ -1,7 +1,7 @@
 <template>
     <tr>
         <td class="photo">
-            <img :alt="title" :src="`/${image}`"></td>
+            <img :alt="title" :src="this.url(image)"></td>
         <td>{{ title }}</td>
         <td class="action">
             <router-link class="btn btn-info" :to="{ name: 'photo-edit',  params: {id}}">

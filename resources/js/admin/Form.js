@@ -12,13 +12,23 @@ class Form {
     }
 
     data() {
-        let data = {};
+        let formData = new FormData;
 
         for (let property in this.originalData) {
-            data[property] = this[property];
+            if (this[property] === false) {
+                formData.append(property, 0);
+            } else if (this[property] === true) {
+                formData.append(property, 1);
+            } else {
+                formData.append(property, this[property]);
+            }
         }
 
-        return data;
+        if (this._method) {
+            formData.append('_method', this._method);
+        }
+
+        return formData;
     }
 
     update(data) {
@@ -44,11 +54,13 @@ class Form {
     }
 
     put(url) {
-        return this.submit('put', url);
+        this._method = 'PUT'; // fix for formData known bug;
+        return this.submit('post', url);
     }
 
     patch(url) {
-        return this.submit('patch', url);
+        this._method = 'PATCH';
+        return this.submit('post', url);
     }
 
     delete(url) {

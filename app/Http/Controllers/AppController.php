@@ -6,7 +6,7 @@ use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Routing\Controller as BaseController;
 
-class AppController extends BaseController
+abstract class AppController extends BaseController
 {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
 }
