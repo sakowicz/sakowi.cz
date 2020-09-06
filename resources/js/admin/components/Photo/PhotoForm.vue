@@ -70,8 +70,10 @@ export default {
             this.$router.push('/photo');
         },
         onFileChange(e) {
+            const file = e.target.files[0];
             if (e.target.files.length) {
-                this.form.image = e.target.files[0];
+                this.form.image = file;
+                this.form.image_name = file.name.substr(0, file.name.lastIndexOf('.'))
             } else {
                 this.form.image = '';
             }

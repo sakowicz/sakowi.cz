@@ -1,7 +1,8 @@
 <template>
     <tr>
         <td class="photo">
-            <img :alt="title" :src="this.url(image)"></td>
+            <img :alt="title" :src="this.storageUrl(image)">
+        </td>
         <td>{{ title }}</td>
         <td class="action">
             <router-link class="btn btn-info" :to="{ name: 'photo-edit',  params: {id}}">
@@ -17,22 +18,22 @@
     </tr>
 </template>
 <script>
-export default {
-    props: ['title', 'image', 'id', 'isOnHomepage'],
-    computed: {
-        switchColorClass() {
-            return this.isOnHomepage ? 'btn-success' : 'btn-danger'
+    export default {
+        props: ['title', 'image', 'id', 'isOnHomepage'],
+        computed: {
+            switchColorClass() {
+                return this.isOnHomepage ? 'btn-success' : 'btn-danger';
+            },
+            switchIconClass() {
+                return this.isOnHomepage ? 'fa-toggle-on' : 'fa-toggle-off';
+            }
         },
-        switchIconClass() {
-            return this.isOnHomepage ? 'fa-toggle-on' : 'fa-toggle-off'
-        },
-    },
-    methods: {
-        toggleIsOnHomepage() {
-            axios.patch(`/photos/toggle-is-on-homepage/${this.id}`).then((res) => {
-                this.$emit('update-is-on-homepage', res.data, this.id)
-            })
+        methods: {
+            toggleIsOnHomepage() {
+                axios.patch(`/photos/toggle-is-on-homepage/${this.id}`).then((res) => {
+                    this.$emit('update-is-on-homepage', res.data, this.id);
+                });
+            }
         }
-    }
-}
+    };
 </script>

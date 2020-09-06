@@ -14,8 +14,8 @@ class PhotoUpdateRequest extends FormRequest
     public function rules()
     {
         return [
-            'title' => 'required_with:is_on_homepage',
-            'subtitle' => 'required_with:is_on_homepage',
+            'title' => 'required_if:is_on_homepage,1',
+            'subtitle' => 'required_if:is_on_homepage,1',
             'is_on_homepage' => 'boolean',
         ];
     }

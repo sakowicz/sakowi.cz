@@ -1,6 +1,6 @@
 <template>
     <div class="portfolio_item">
-        <img :src="url" :alt="title">
+        <img :src="this.storageUrl(url)" :alt="title">
         <div class="port-desc-holder">
             <div class="port-desc">
                 <div class="overlay"></div>
@@ -14,9 +14,8 @@
         </div>
     </div>
 </template>
-
 <script>
     export default {
-        props: ['title', 'subtitle', 'url'],
-    }
+        props: ['title', 'subtitle', 'url']
+    };
 </script>

@@ -5,7 +5,7 @@ window.toastr = require('toastr');
 
 import Vue from 'vue';
 import router from './admin/router';
-import methods from "./global_helpers";
+import methods from './_helpers';
 
 const files = require.context('./admin', true, /\.vue$/i);
 files.keys()

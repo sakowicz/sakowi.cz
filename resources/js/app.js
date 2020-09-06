@@ -2,7 +2,7 @@ require('./app/_bootstrap');
 
 import Vue from 'vue';
 import router from './app/router';
-import methods from './app/helpers';
+import methods from './_helpers';
 
 const files = require.context('./app', true, /\.vue$/i);
 files.keys()
