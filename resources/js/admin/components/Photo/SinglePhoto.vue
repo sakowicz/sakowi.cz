@@ -30,8 +30,13 @@
         },
         methods: {
             toggleIsOnHomepage() {
-                axios.patch(`/photos/toggle-is-on-homepage/${this.id}`).then((res) => {
-                    this.$emit('update-is-on-homepage', res.data, this.id);
+                axios.patch(`/photos/toggle-is-on-homepage/${this.id}`).then(res => {
+                    this.$emit('update-is-on-homepage', res.data.is_on_homepage, this.id);
+                    toastr.success(res.data.message);
+                }).catch(err => {
+                    err.response.data.errors.forEach(error => {
+                        toastr.error(error);
+                    });
                 });
             }
         }
