@@ -19,3 +19,6 @@ _ide_helper*
 /public/mix-manifest.json
 /public/fonts/vendor
 /public/js/app.js.map
+/public/js/manifest.js
+/public/js/vendor.js
+/public/images/
