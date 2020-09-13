@@ -37,7 +37,7 @@ export default {
         return {
             services: [
                 {
-                    img: 'images/photos/ros.png',
+                    img: 'images/photos/ros.jpg',
                     title: 'Buduję aplikacje internetowe',
                     subtitle: 'Tworzę od podstaw portale oraz serwisy internetowe z użyciem najbezpieczniejszych frameworków.',
                     icon: 'fa fa-cubes',
@@ -55,7 +55,7 @@ export default {
                     icon: 'fa fa-tasks',
                 },
                 {
-                    img: 'images/photos/ros.png',
+                    img: 'images/photos/ros.jpg',
                     title: 'Wiele więcej',
                     subtitle: 'Tworzę audyty bezpieczeństwa, projektuję architekturę, optymalizuję oraz zabezpieczam aplikacje internetowe.',
                     icon: 'fa fa-question',

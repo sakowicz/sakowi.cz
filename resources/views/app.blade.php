@@ -87,6 +87,7 @@
         }
 
 
+
     </script>
     <meta name="B-verify" content="272bc274c68d50b76268e9cf47a588e6c2676f94"/>
 </head>
@@ -97,8 +98,6 @@
     <app></app>
 </div>
 <script type="text/javascript" src="js/compressed.js"></script>
-<script src="{{ mix('js/manifest.js') }}"></script>
-<script src="{{ mix('js/vendor.js') }}"></script>
 <script src="{{ mix('js/app.js') }}"></script>
 </body>
 </html>
