@@ -28,8 +28,8 @@ export default {
         axios.get('/photos').then(res => {
             res.data.forEach(data => {
                 this.photos.push(data);
-                this.shuffleArray(this.photos);
             });
+            this.shuffleArray(this.photos);
 
         }).finally(() => {
             this.initEvent('initOutdoorSlider');
