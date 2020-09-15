@@ -9,57 +9,57 @@ class PhotoSeeder extends Seeder
 {
     const DEFAULT_PHOTOS = [
         [
-            "url" => 'images/most-redzinski-ksiezyc.jpg',
+            "url" => 'https://sakowi.cz/imagesmost-redzinski-ksiezyc.jpg',
             "title" => 'Księżyc nad pylonem Mostu Rędzińskiego',
             "subtitle" => 'Sierp zachodzącego satelity nad najwyższym mostem w Polsce'
         ],
         [
-            "url" => 'images/pelnia-skytower.jpg',
+            "url" => 'https://sakowi.cz/imagespelnia-skytower.jpg',
             "title" => 'Księżyc nad Skytower',
             "subtitle" => 'O mały włos i by się zderzyły!'
         ],
         [
-            "url" => 'images/photos/katedra-ksiezyc.jpg',
+            "url" => 'https://sakowi.cz/imagesphotos/katedra-ksiezyc.jpg',
             "title" => 'Oko Wrocławia',
             "subtitle" => 'Wchodzący Księżyc nad Ostrowem Tumskim'
         ],
         [
-            "url" => 'images/panorama-wroclaw.jpg',
+            "url" => 'https://sakowi.cz/imagespanorama-wroclaw.jpg',
             "title" => 'Panorama Wrocławia',
             "subtitle" => 'Widać m. in. Skytower oraz wyłaniającą się zza chmur Ślężę'
         ],
         [
-            "url" => 'images/tecza-nad-katedra.jpg',
+            "url" => 'https://sakowi.cz/imagestecza-nad-katedra.jpg',
             "title" => 'Tęcza nad Katedrą',
             "subtitle" => 'Archikatedra św. Jana Chrzciciela'
         ],
         [
-            "url" => 'images/photos/droga-mleczna-hermanovice.jpg',
+            "url" => 'https://sakowi.cz/imagesphotos/droga-mleczna-hermanovice.jpg',
             "title" => 'Z głową w gwiazdach',
             "subtitle" => 'Droga Mleczna nad Heřmanovicami'
         ],
         [
-            "url" => 'images/hala-stulecia-ksiezyc.jpg',
+            "url" => 'https://sakowi.cz/imageshala-stulecia-ksiezyc.jpg',
             "title" => 'Księżyc nad Halą Stulecia',
             "subtitle" => 'Nasz naturalny satelita zawisnął na żurawiu'
         ],
         [
-            "url" => 'images/skytower-ksiezyc-sierp.jpg',
+            "url" => 'https://sakowi.cz/imagesskytower-ksiezyc-sierp.jpg',
             "title" => 'Zachodzący Księżyc',
             "subtitle" => 'Sierp zachodzącego Księżyca obok Skytower'
         ],
         [
-            "url" => 'images/photos/droga-mleczna-balaton.jpg',
+            "url" => 'https://sakowi.cz/imagesphotos/droga-mleczna-balaton.jpg',
             "title" => 'Galaktyczny Pomost',
             "subtitle" => 'Balaton, Węgry'
         ],
         [
-            "url" => 'images/photos/wschod-ksiezyca-nysa.jpg',
+            "url" => 'https://sakowi.cz/imagesphotos/wschod-ksiezyca-nysa.jpg',
             "title" => 'Wschód Księżyca nad katedrą',
             "subtitle" => 'Bazylika św. Jakuba i św. Agnieszki w Nysie'
         ],
         [
-            "url" => 'images/photos/skytower-tecza.jpg',
+            "url" => 'https://sakowi.cz/imagesphotos/skytower-tecza.jpg',
             "title" => 'Tęcza nad SkyTower',
             "subtitle" => 'Wrocław',
         ]

@@ -3,7 +3,7 @@ export default {
         if (url.startsWith('public/')) {
             return '/' + url.substr(7);
         }
-        return '/' + url;
+        return url;
     }),
     initEvent: (name => {
         const event = document.createEvent('Event');
