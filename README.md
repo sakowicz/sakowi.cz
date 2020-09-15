@@ -5,7 +5,7 @@
 
 My company/photography portfolio website written in Laravel and Vue.js.
 
-###Installation
+### Installation
 Copy `.env.example` to `.env` and fill it if needed.
 
 You need to install additional dependencies. Type this in terminal:
