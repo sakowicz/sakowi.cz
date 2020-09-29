@@ -11,7 +11,7 @@
             <button v-on:click="toggleIsOnHomepage" class="btn" :class=switchColorClass title="Pokaż na głównej">
                 <i class="fas" :class=switchIconClass></i>
             </button>
-            <a class="btn btn-light" :href="`/${image}`" target="_blank">
+            <a class="btn btn-light" :href="this.storageUrl(image)" target="_blank">
                 <i class="fas fa-link"></i>
             </a>
         </td>
