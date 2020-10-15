@@ -38,9 +38,9 @@
     <meta name="theme-color" content="#2F3BA2">
     <link href="{{ mix('css/app.css') }}" rel="stylesheet">
     <script>
-        (function (i, s, o, g, r, a, m) {
+        (function(i, s, o, g, r, a, m) {
             i['GoogleAnalyticsObject'] = r;
-            i[r] = i[r] || function () {
+            i[r] = i[r] || function() {
                 (i[r].q = i[r].q || []).push(arguments);
             }, i[r].l = 1 * new Date();
             a = s.createElement(o),
@@ -97,7 +97,7 @@
 <div id="main">
     <app></app>
 </div>
-<script type="text/javascript" src="js/compressed.js"></script>
+<script type="text/javascript" src="/js/compressed.js"></script>
 <script src="{{ mix('js/app.js') }}"></script>
 </body>
 </html>

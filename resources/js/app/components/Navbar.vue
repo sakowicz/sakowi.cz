@@ -3,7 +3,7 @@
         <div class="header-inner">
             <div class="logo-holder">
                 <router-link :to="{ name: 'home' }">
-                    <img src="img/logo.png" alt="sakowi.cz logo">
+                    <img src="/img/logo.png" alt="sakowi.cz logo">
                 </router-link>
             </div>
             <div class="nav-button-holder">
