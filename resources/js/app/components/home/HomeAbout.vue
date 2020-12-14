@@ -10,7 +10,7 @@
                     <div class="separator"></div>
                     <div class="clearfix"></div>
                     <p>
-                        Nazywam się Szymon Sakowicz. Jestem programistą. Specjalizuję się w technologiachwebowych
+                        Nazywam się Szymon Sakowicz. Jestem programistą. Specjalizuję się w technologiach webowych
                         (głównie w PHP oraz Node.JS) i bezpieczeństwie internetowym. Dodatkowo, z pasji zajmuję
                         się
                         <router-link :to="{ name: 'photography' }">fotografią</router-link>
